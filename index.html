@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodePlay</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="nav_container">
+      <div class="logo"><h1>CodePlay</h1></div>
+      <div class="nav">
+        <button id="disableHtml" class="">Html</button>
+        <button id="disableCss" class="changeColor">Css</button>
+        <button id="disableJavascript" class="changeColor">Javascript</button>
+        <button id="disableOutput" class="">Output</button>
+      </div>
+      <div class="owner"><h1>Made By Akash</h1></div>
+    </div>
+    <section>
+      <textarea
+        spellcheck="false"
+        name="html"
+        id="html"
+        placeholder="Html"
+        onkeyup="makePage()"
+      ></textarea>
+      <textarea
+        spellcheck="false"
+        name="css"
+        id="css"
+        placeholder="Css"
+        onkeyup="makePage()"
+        class="show"
+      ></textarea>
+      <textarea
+        spellcheck="false"
+        name="js"
+        id="js"
+        placeholder="JavaScript"
+        onkeyup="makePage()"
+        class="show"
+      ></textarea>
+      <iframe frameborder="1" id="webPage"></iframe>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
